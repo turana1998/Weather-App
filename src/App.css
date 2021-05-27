@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.App-logo {
+  height: 100px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 1s linear;
+  }
+}
+
+.App-header {
+  background-color: rgb(255, 255, 255);
+
+  height: 150px;
+  display: flex;
+  /* width: 100vh; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.appBody {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-71deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 0px;
+  border-bottom: 2px solid black;
+}
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.MainB{
+  width: 300px;
+  height: 400px;
+  /* background: linear-gradient(30deg, #c64219, #f3005d, #87dfff, #700bec);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite; */
+}
+
+
+.Badi{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+color: rgb(4, 44, 1);
+font-weight: 600;
+position: relative;
+
+}
+.MainB{
+  position: absolute;
+  border: 1px solid black;
+  /* display: flex; */
+  justify-content: center;
+  align-content: center;
+  background-image: url('./bg.jpg');
+  background-size: auto;
+  background-position: bottom;
+  transition: 1s;
+  background-repeat: no-repeat;
+}
+.Temp{
+  width: 100%;
+  height: 50px;
+  font-size: 40px;
+  color: #FF851B;
+  background-color: rgba(102, 121, 187, 0.319);
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  border-color: inherit;
+  border-radius: 50px;
+  color: black;
+  outline: none;
+}
+
+input:focus {
+  border-color: 1px rgb(118, 37, 118);
+}
+
+
+.MainB.warm {
+  background-image: url('./warm-bg.jpg');
+  transition: 1s
+}
+
+.login-box{
+  width: 300px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+
